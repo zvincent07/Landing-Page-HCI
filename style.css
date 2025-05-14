@@ -432,4 +432,12 @@ body {
     .team-photos {
       gap: 0.7rem;
     }
-  }
+}
+.team-hover-tip {
+    text-align: center;
+    font-size: 0.97rem;
+    color: var(--secondary);
+    margin-bottom: 0.7rem;
+    opacity: 0.85;
+    letter-spacing: 0.5px;
+}
