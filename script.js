@@ -1,6 +1,20 @@
 // jQuery for INVENTRACK Landing Page
 
 $(document).ready(function() {
+    // Mobile Menu Toggle
+    $('.mobile-menu').on('click', function() {
+      $('.nav-links').toggleClass('active');
+      $(this).find('i').toggleClass('fa-bars fa-times');
+    });
+
+    // Close mobile menu when clicking outside
+    $(document).on('click', function(e) {
+      if (!$(e.target).closest('.navbar').length) {
+        $('.nav-links').removeClass('active');
+        $('.mobile-menu i').removeClass('fa-times').addClass('fa-bars');
+      }
+    });
+
     // Navbar background transition on scroll
     $(window).on('scroll', function() {
       if ($(window).scrollTop() > 40) {
@@ -15,6 +29,8 @@ $(document).ready(function() {
       var target = $(this).attr('href');
       if (target.startsWith('#')) {
         e.preventDefault();
+        $('.nav-links').removeClass('active');
+        $('.mobile-menu i').removeClass('fa-times').addClass('fa-bars');
         $('html, body').animate({
           scrollTop: $(target).offset().top - 60
         }, 600, 'swing');
@@ -86,7 +102,6 @@ $(document).ready(function() {
     $(window).on('scroll', animateCounters);
     animateCounters();
   
-    // Team photo hover effect (name overlay handled by CSS)
     // Contact form micro-interaction
     $('.contact-form').on('submit', function(e) {
       e.preventDefault();
@@ -100,4 +115,18 @@ $(document).ready(function() {
         }, 1800);
       }, 1200);
     });
-  });
+
+    // Add animation to testimonial cards
+    function animateTestimonials() {
+      $('.testimonial-card').each(function(i) {
+        var card = $(this);
+        if (card.offset().top < $(window).scrollTop() + $(window).height() - 60) {
+          setTimeout(function() {
+            card.addClass('visible');
+          }, i * 150);
+        }
+      });
+    }
+    $(window).on('scroll', animateTestimonials);
+    animateTestimonials();
+});

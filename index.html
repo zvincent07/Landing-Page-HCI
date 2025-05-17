@@ -14,29 +14,83 @@
   <!-- Header & Sticky Navbar -->
   <header>
     <nav class="navbar">
-      <div class="logo">
-        <i class="fa-solid fa-cubes"></i> INVENTRACK
+      <div class="nav-wrapper">
+        <div class="logo">
+          <i class="fa-solid fa-cubes"></i>
+          <span>INVENTRACK</span>
+        </div>
+        <div class="nav-container">
+          <ul class="nav-links">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="nav-buttons">
+            <a href="#" class="nav-btn login-btn">Login</a>
+          </div>
+        </div>
+        <button class="mobile-menu" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#analytics">Analytics</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section id="hero" class="hero-section">
     <div class="hero-content">
+      <div class="hero-badge">Government Services Office</div>
       <h1>
-        <span class="highlight">Web-Based</span> Inventory Management<br>
-        for <span class="highlight">Padre Garcia GSO</span>
+        <span class="highlight">Modernize</span> Your Municipal Inventory<br>
+        with <span class="highlight">INVENTRACK</span>
       </h1>
-      <p>Modernize your municipal inventory with predictive & descriptive analytics.</p>
-      <a href="#contact" class="cta-btn">Request a Demo</a>
+      <p>Empowering Padre Garcia GSO with intelligent inventory management and data-driven insights for better resource allocation and decision making.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="cta-btn primary">Request a Demo</a>
+        <a href="#features" class="cta-btn secondary">Learn More</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Government Compliant</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Support</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">99.9%</span>
+          <span class="stat-label">Uptime</span>
+        </div>
+      </div>
     </div>
     <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="section-title">About INVENTRACK</div>
+    <div class="about-content">
+      <div class="about-text">
+        <p>INVENTRACK is a comprehensive inventory management solution specifically designed for the General Services Office of Padre Garcia Municipality. Our system combines modern technology with user-friendly interfaces to streamline inventory processes and provide valuable insights through predictive and descriptive analytics.</p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <i class="fa-solid fa-check-circle"></i>
+            <span>Compliant with Government Standards</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fa-solid fa-check-circle"></i>
+            <span>Secure and Reliable Platform</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fa-solid fa-check-circle"></i>
+            <span>24/7 Technical Support</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Features Section -->
@@ -45,80 +99,241 @@
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-icon"><i class="fa-solid fa-database"></i></div>
-        <h3>Centralized Records</h3>
-        <p>Unified, real-time inventory tracking for all assets and supplies.</p>
+        <h3>Smart Inventory Tracking</h3>
+        <p>Real-time tracking of municipal assets, supplies, and equipment with automated stock level monitoring.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
-        <h3>Analytics-Driven</h3>
-        <p>Descriptive & predictive analytics for smarter resource planning.</p>
+        <h3>Predictive Analytics</h3>
+        <p>AI-powered forecasting for inventory needs, budget planning, and resource allocation optimization.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+        <div class="feature-icon"><i class="fa-solid fa-bell"></i></div>
         <h3>Automated Alerts</h3>
-        <p>Instant notifications for low stock, expiries, and pending approvals.</p>
+        <p>Smart notifications for low stock levels, expiring items, and maintenance schedules.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-users-gear"></i></div>
-        <h3>Role-Based Access</h3>
-        <p>Secure, permission-based controls for staff and administrators.</p>
+        <div class="feature-icon"><i class="fa-solid fa-shield-alt"></i></div>
+        <h3>Government Compliance</h3>
+        <p>Built-in compliance with government procurement and inventory management regulations.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-file-invoice"></i></div>
+        <h3>Automated Reports</h3>
+        <p>Generate comprehensive reports for audits, budget reviews, and inventory assessments.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-mobile-alt"></i></div>
+        <h3>Mobile Access</h3>
+        <p>Access inventory data and perform tasks on-the-go with our mobile-friendly interface.</p>
       </div>
     </div>
   </section>
 
-  <!-- Analytics / Metrics Block -->
+  <!-- Analytics Section -->
   <section id="analytics" class="analytics-section">
-    <div class="analytics-grid">
-      <div class="metric">
-        <div class="metric-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
-        <div class="metric-number" data-count="3200">0</div>
-        <div class="metric-label">Items Tracked</div>
+    <div class="section-title">Powerful Analytics</div>
+    <div class="analytics-content">
+      <div class="analytics-text">
+        <h2>Data-Driven Decision Making</h2>
+        <p>Transform your inventory management with advanced analytics and predictive insights.</p>
+        <div class="analytics-features">
+          <div class="analytics-feature">
+            <i class="fa-solid fa-chart-pie"></i>
+            <h3>Real-time Insights</h3>
+            <p>Monitor inventory levels and trends in real-time with intuitive dashboards</p>
+          </div>
+          <div class="analytics-feature">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Predictive Analysis</h3>
+            <p>AI-powered forecasting for future inventory needs and budget planning</p>
+          </div>
+          <div class="analytics-feature">
+            <i class="fa-solid fa-file-lines"></i>
+            <h3>Custom Reports</h3>
+            <p>Generate detailed reports for stakeholders and compliance requirements</p>
+          </div>
+        </div>
       </div>
-      <div class="metric">
-        <div class="metric-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-        <div class="metric-number" data-count="99.9">0</div>
-        <div class="metric-label">Uptime (%)</div>
-      </div>
-      <div class="metric">
-        <div class="metric-icon"><i class="fa-solid fa-headset"></i></div>
-        <div class="metric-number" data-count="24">0</div>
-        <div class="metric-label">Support (hrs)</div>
-      </div>
-      <div class="metric">
-        <div class="metric-icon"><i class="fa-solid fa-user-shield"></i></div>
-        <div class="metric-number" data-count="100">0</div>
-        <div class="metric-label">Data Security</div>
+      <div class="analytics-metrics">
+        <div class="metric">
+          <div class="metric-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+          <div class="metric-number" data-count="3200">0</div>
+          <div class="metric-label">Items Tracked</div>
+        </div>
+        <div class="metric">
+          <div class="metric-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+          <div class="metric-number" data-count="99.9">0</div>
+          <div class="metric-label">Uptime (%)</div>
+        </div>
+        <div class="metric">
+          <div class="metric-icon"><i class="fa-solid fa-headset"></i></div>
+          <div class="metric-number" data-count="24">0</div>
+          <div class="metric-label">Support (hrs)</div>
+        </div>
+        <div class="metric">
+          <div class="metric-icon"><i class="fa-solid fa-user-shield"></i></div>
+          <div class="metric-number" data-count="100">0</div>
+          <div class="metric-label">Data Security</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact / Team Section -->
-  <section id="contact" class="contact-section">
-    <div class="contact-form-block">
-      <div class="section-title">Contact Us</div>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+  <!-- Benefits Section -->
+  <section id="benefits" class="benefits-section">
+    <div class="section-title">Why Choose INVENTRACK?</div>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3>Government Compliant</h3>
+        <p>Built to meet all government procurement and inventory management standards</p>
+        <ul class="benefit-list">
+          <li><i class="fa-solid fa-check"></i> COA Compliance</li>
+          <li><i class="fa-solid fa-check"></i> DBM Standards</li>
+          <li><i class="fa-solid fa-check"></i> Security Protocols</li>
+        </ul>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fa-solid fa-gauge-high"></i>
+        </div>
+        <h3>Efficiency Boost</h3>
+        <p>Streamline operations and reduce manual work with automated processes</p>
+        <ul class="benefit-list">
+          <li><i class="fa-solid fa-check"></i> Automated Alerts</li>
+          <li><i class="fa-solid fa-check"></i> Quick Reports</li>
+          <li><i class="fa-solid fa-check"></i> Batch Processing</li>
+        </ul>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <h3>Smart Analytics</h3>
+        <p>Make data-driven decisions with advanced analytics and insights</p>
+        <ul class="benefit-list">
+          <li><i class="fa-solid fa-check"></i> Predictive Analysis</li>
+          <li><i class="fa-solid fa-check"></i> Trend Reports</li>
+          <li><i class="fa-solid fa-check"></i> Cost Optimization</li>
+        </ul>
+      </div>
     </div>
-    <div class="team-block">
-      <div class="team-title">Our Team</div>
-      <div class="team-hover-tip">Hover here to see group members</div>
-      <div class="team-photos">
-        <div class="team-photo" data-name="Glenn Roy B. Dimaandal">
-          <i class="fa-solid fa-user-graduate" style="font-size:2.5rem;color:var(--primary);"></i>
-          <div class="team-name">Glenn Roy B. Dimaandal</div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="section-title">What Our Users Say</div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>"INVENTRACK has revolutionized how we manage our municipal inventory. The predictive analytics have helped us save significant resources."</p>
         </div>
-        <div class="team-photo" data-name="John Vincent G. Laylo">
-          <i class="fa-solid fa-user-ninja" style="font-size:2.5rem;color:var(--secondary);"></i>
-          <div class="team-name">John Vincent G. Laylo</div>
+        <div class="testimonial-author">
+          <div class="author-info">
+            <h4>Maria Santos</h4>
+            <p>GSO Director, Padre Garcia</p>
+          </div>
         </div>
-        <div class="team-photo" data-name="John Adrian F. Perce">
-          <i class="fa-solid fa-user-md" style="font-size:2.5rem;color:var(--highlight);"></i>
-          <div class="team-name">John Adrian F. Perce</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>"The automated alerts and reporting features have streamlined our workflow tremendously. A must-have for modern GSO departments."</p>
         </div>
+        <div class="testimonial-author">
+          <div class="author-info">
+            <h4>John Reyes</h4>
+            <p>Inventory Manager</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>"The user-friendly interface and comprehensive analytics make inventory management a breeze. Highly recommended!"</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-info">
+            <h4>Sarah Cruz</h4>
+            <p>Procurement Officer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="section-title">Get in Touch</div>
+        <p class="contact-description">Ready to modernize your inventory management? Contact us for a personalized demo or any inquiries.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Padre Garcia Municipal Hall<br>Batangas, Philippines</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>info@inventrack.ph<br>support@inventrack.ph</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+63 (123) 456-7890<br>+63 (123) 456-7891</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-social">
+          <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="contact-form-block">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+          </div>
+          <div class="form-group">
+            <label for="department">Department</label>
+            <select id="department" required>
+              <option value="">Select Department</option>
+              <option value="gso">General Services Office</option>
+              <option value="finance">Finance Department</option>
+              <option value="admin">Administration</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us about your needs" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
       </div>
     </div>
   </section>
